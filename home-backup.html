@@ -1,4 +1,5 @@
-$(document).ready(function () {
+<!-- GSAP Hero Animation -->
+<script>
   // Animation for the first element with a 1-second delay
   gsap.from("#element1", {
     x: -50, // initial position on the x-axis (offscreen left)
@@ -7,7 +8,10 @@ $(document).ready(function () {
     ease: "power2.out", // easing function
     delay: 0.35, // delay of 1 second
   });
-
+</script>
+<!-- End GSAP Hero Animation-->
+<!-- SwiperJS Integration for Testimonials -->
+<script>
   const swiper1 = new Swiper(".swiper1", {
     // Optional parameters
     direction: "horizontal",
@@ -28,6 +32,10 @@ $(document).ready(function () {
       prevEl: ".button-prev",
     },
   });
+</script>
+<!-- SwiperJS End-->
+<!-- Stat Counter -->
+<script>
   new PureCounter({
     // Setting that can't' be overriden on pre-element
     selector: ".multiply", // HTML query selector for spesific element
@@ -63,4 +71,5 @@ $(document).ready(function () {
     currency: false, // This will enable/disable Currency format. Use it for set the symbol too [boolean|char|string]
     separator: true, // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
   });
-});
+</script>
+-->
